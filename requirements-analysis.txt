@@ -1,0 +1,4 @@
+# Optional plotting and vendor analysis modules; install torch separately.
+-r requirements.txt
+matplotlib==3.10.9
+scipy==1.15.3

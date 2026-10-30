@@ -1,0 +1,42 @@
+{
+  "upstream": {
+    "vmamba_repository": "https://github.com/MzeroMiko/VMamba",
+    "commit": "2ed52ead062a51a64521ed3871d52914bf532876",
+    "upstream_url": "https://raw.githubusercontent.com/MzeroMiko/VMamba/2ed52ead062a51a64521ed3871d52914bf532876/vmamba.py",
+    "upstream_source_sha256": "572207a2b6553ff85d81b602eebda2041623073f01fc0c6d1280c5a2add040f6",
+    "reference_sha256": "e3cbc52373fd48b9dcfc6285dd7eb97ab14b65b7e3558e7a85b85fd99fcc7ce0",
+    "reference_functions": [
+      "cross_merge_fwd",
+      "cross_scan_fwd",
+      "selective_scan_torch"
+    ],
+    "backend": "torch_associative_scan_v1",
+    "fused_kernels": false,
+    "claim": "Independent SS2Dv0-style adaptation; not the official VMamba runtime",
+    "copied_baseline_files": {
+      "sair_mamba/baseline.py": {
+        "source": "E:\\Paper\\sair_diffusion\\src\\models\\unet.py",
+        "sha256": "b4df8d2a9eefc14a25c0c2b3828401e404854331e632fdf8747424e892dd3503"
+      },
+      "sair_mamba/diffusion.py": {
+        "source": "E:\\Paper\\sair_diffusion\\src\\diffusion\\ddpm.py",
+        "sha256": "59becf2a8bcac1ef5ffd5031882f66b9fb577582d2be5812b33bd678516926ca"
+      },
+      "sair_mamba/ema.py": {
+        "source": "E:\\Paper\\sair_diffusion\\src\\training\\ema.py",
+        "sha256": "a7d1b0580a3380c74ee521304f61e5e26bc315646bf95af511270d19f14e022c"
+      },
+      "sair_mamba/utils.py": {
+        "source": "E:\\Paper\\sair_diffusion\\src\\utils.py",
+        "sha256": "5324f7c7402a81a135ec745b1288d953bb676e845dabb36e58e390dfb99000c3"
+      },
+      "provenance/baseline_audit.md": {
+        "source": "E:\\Paper\\sair_diffusion\\baseline_audit.md",
+        "sha256": "07bfc9e319495801614c1cc44060259ba37bc3983b79b62984986b1c4968bdde"
+      }
+    }
+  },
+  "local_scan_source_sha256": "aded82e571a50eed7117b6c4c6d9e49aabf1fa60cc4342fd0cced6ad6d45c8d6",
+  "adaptation": "Enable checkpoint recomputation whenever gradients are enabled and scan inputs require grad, including frozen eval priors; architecture replaces encoder.2.1 and middle.1 with time-conditioned blocks.",
+  "copied_reference_sha256": "e3cbc52373fd48b9dcfc6285dd7eb97ab14b65b7e3558e7a85b85fd99fcc7ce0"
+}

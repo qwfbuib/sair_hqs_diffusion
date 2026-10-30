@@ -1,0 +1,3 @@
+# Preserve exact source bytes: checkpoints bind SHA256 hashes of runtime files.
+# In particular, do not normalize Python or vendored source line endings.
+* -text

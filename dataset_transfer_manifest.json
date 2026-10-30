@@ -1,0 +1,28 @@
+{
+  "source": "E:\\Paper\\Dataset64\\v_generate\\dataset_sr_128",
+  "required_directories": [
+    "gt",
+    "meas"
+  ],
+  "required_files": {
+    "scenes.json": "c4b481c529d625ec962f72c5873346fa081e0ddb038c46de1e6de1abb799d35a",
+    "geometry.npz": "5940160f15241de14054a0fdeba91dd84f3600720ed75c234c7b0d9a8474db0e",
+    "summary.csv": "22380b4c9a03fd6e19f7e3b61dc8e0f40a5b9cf184a665b4b03769ef304d7871",
+    "audit_report.json": "8383ab214b5b67243873dfc1cd6e45af52cba04e549c65e2d0065437e7036424",
+    "visibility_verification.json": "427e4ac5d2bff7c7a2e68ac996ae9c29324b92b7fadeb40d0d30877666d0e04a",
+    "native128_generation_report.json": "2ce106eed962d127429e011bef5fb473e9cc62f29fc86725d9964fb690dbc9a5"
+  },
+  "scene_count": 31500,
+  "gt_shape": [
+    128,
+    128
+  ],
+  "gt_dtype": "uint8",
+  "visibility_gamma_counts": [
+    1830,
+    1635,
+    1098,
+    753
+  ],
+  "reference_content_fingerprint": "65ebc30138b0e5482cdac4cb67ec522133e5a52396e1f113be75f5abde5afd0d"
+}

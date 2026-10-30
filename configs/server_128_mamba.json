@@ -1,0 +1,64 @@
+{
+  "data": "./dataset_sr_128",
+  "model": {
+    "image_size": 128,
+    "t_min": 150.0,
+    "t_max": 320.0,
+    "base_channels": 32,
+    "channel_mult": [
+      1,
+      2,
+      4,
+      4
+    ],
+    "stages": 8,
+    "cg_iters": 64,
+    "cg_rtol": 1e-05,
+    "initial_beta": 0.05,
+    "beta_start": 0.1,
+    "beta_end": 0.01,
+    "mu_start": 0.2,
+    "mu_end": 0.01,
+    "sigma_min": 0.01,
+    "sigma_max": 0.5,
+    "sigma_start": 0.25,
+    "sigma_end": 0.02,
+    "alpha_init": 0.5,
+    "seed": 20261023,
+    "batch_size": 1,
+    "num_workers": 0,
+    "learning_rate": 0.0002,
+    "noise_sigma": 0.073299434,
+    "visibility_weight": 0.001,
+    "gradient_weight": 0.05,
+    "range_weight": 0.01,
+    "dsm_weight": 0.01
+  },
+  "training": {
+    "prior_updates": 100000,
+    "unfold_updates": 20000,
+    "prior_batch_size": 4,
+    "unfold_batch_size": 1,
+    "unfold_accumulation": 4,
+    "prior_amp": true,
+    "prior_validate_every": 1000,
+    "unfold_validate_every": 500,
+    "checkpoint_every": 250,
+    "log_every": 25,
+    "val_scenes_per_class": 20,
+    "gammas": [
+      1.0,
+      0.75,
+      0.5,
+      0.35
+    ],
+    "freeze_prior": true,
+    "projection": "soft",
+    "cg_inner_tolerance_factor": 0.25,
+    "test_evaluation": false,
+    "gradient_clip": 1.0
+  },
+  "prior": {
+    "backbone": "mamba"
+  }
+}

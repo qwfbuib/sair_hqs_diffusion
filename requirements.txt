@@ -1,0 +1,3 @@
+# Install a CUDA-capable torch separately; do not accidentally replace it with a CPU wheel.
+numpy==1.26.4
+Pillow==12.3.0
