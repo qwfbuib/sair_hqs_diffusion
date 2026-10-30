@@ -30,4 +30,4 @@ jobs:
           python -m pip install torch==2.1.2 --index-url https://download.pytorch.org/whl/cpu
           python -m pip install -r requirements.txt
       - name: Run tests without external datasets or checkpoints
-run: python -B -m unittest test_fixed_prior test_filter_fade test_evaluate_unfold test_selectable_prior -v
+        run: python -B -m unittest test_fixed_prior test_filter_fade test_evaluate_unfold test_selectable_prior -v
